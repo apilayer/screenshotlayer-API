@@ -4,7 +4,7 @@
 
 By default, screenshots are rendered based on the height of the selected (or default) viewport. Alternatively, you can request the full height of the target website to be captured, simply by setting the API's `fullpage` parameter to `1`.
 
-### Example Query:
+**Example Query**:
 
 ```url
 http://api.screenshotlayer.com/api/capture
@@ -17,7 +17,7 @@ http://api.screenshotlayer.com/api/capture
 
 By default, the screenshotlayer API returns your target website's snapshot in original size (1:1). If you'd like to request a thumbnail, append the API's width parameter containing your preferred thumbnail width in pixels.
 
-### Example Query:
+**Example Query**:
 
 ```url
 http://api.screenshotlayer.com/api/capture
@@ -30,7 +30,7 @@ http://api.screenshotlayer.com/api/capture
 
 The screenshotlayer API's default viewport setting is `1440x900`. You can specify a custom viewport by setting the `viewport` parameter to your desired dimensions. (format: `width x height`, in pixels)
 
-#### Example Query:
+**Example Query**:
 
 ```url
 http://api.screenshotlayer.com/api/capture
@@ -50,7 +50,7 @@ You can find a comprehensive [list of mobile viewport sizes here](http://viewpor
 
 Your snapshots can be requested in three different formats: **PNG**, **JPG** and **GIF**. You can change the default format (PNG) simply by appending the API's `format` parameter containing your preferred format.
 
-### Example Query:
+**Example Query**:
 
 ```url
 http://api.screenshotlayer.com/api/capture
@@ -66,7 +66,7 @@ http://api.screenshotlayer.com/api/capture
 
 For those of you who have to display API request URLs on their website (e.g. inside an `<img src="...">` tag, it is crucial to make use of the screenshotlayer API's **URL Encryption** method, which lets you generate a unique **Secret Key** for every API request and simply append it to the respective query URL.
 
-### Step 1: Define your target website's URL
+**Step 1: Define your target website's URL**
 
 First of all, define the URL of the website you want to take a snapshot of. In our example we will use the following URL:
 
@@ -74,7 +74,7 @@ First of all, define the URL of the website you want to take a snapshot of. In o
 http://www.apple.com
 ```
 
-### Step 2: Define your secret keyword
+**Step 2: Define your secret keyword**
 
 A secret keyword can be any secret word or phrase of your choice. As the next step, make sure you have defined it in your [account dashboard](https://screenshotlayer.com/dashboard).
 
@@ -82,7 +82,7 @@ A secret keyword can be any secret word or phrase of your choice. As the next st
 mysecretkeyword
 ```
 
-### Step 3: Combine
+**Step 3: Combine**
 
 Now you will need to combine these two parts (URL & secret keyword) into one, resulting in:
 
@@ -90,7 +90,7 @@ Now you will need to combine these two parts (URL & secret keyword) into one, re
 http://www.apple.commysecretkeyword
 ```
 
-### Step 4: Generate your md5 Secret Key
+**Step 4: Generate your md5 Secret Key**
 
 Finally, create an `md5 hash` of the combined parts. (this will be your `secret_key`)
 
@@ -100,7 +100,7 @@ a9d09c5b1cda7e5ef51fed4526e9cff3
 
 Now that you have your Secret Key, you can simply append to your query URL using the API's `secret_key` parameter and rest assured that your API access is - as long as you'll keep your secret keyword secret - safe from abuse.
 
-### Syntax:
+**Syntax:**
 
 ```url
 http://api.screenshotlayer.com/api/capture
@@ -121,7 +121,7 @@ background: #00ff00 !important;
 }
 ```
 
-### Example Query:
+**Example Query:**
 
 ```url
 http://api.screenshotlayer.com/api/capture
@@ -136,7 +136,7 @@ http://api.screenshotlayer.com/api/capture
 
 The API's `delay` parameter enables you to specify a custom delay time (in seconds) before the snapshot is captured. This feature may especially useful if certain contents of your target website appear after the initial page load. (e.g. CSS animations, JavaScript effects)
 
-### Example Query:
+**Example Query:**
 
 The following query sets a delay time of 3 seconds in order to capture any delayed/animated contents on the target website. (http://tumblr.com)
 
@@ -153,7 +153,7 @@ http://api.screenshotlayer.com/api/capture
 
 By default, website screenshots are cashed for 30 days (2,592,000 seconds). Using the API's ttl parameter, you can specify a custom caching time (time-to-live) lower than the default setting.
 
-### Example Query:
+**Example Query:**
 
 The following query requests the snapshot's ttl to be set to 259,200 seconds (3 days).
 
@@ -170,7 +170,7 @@ http://api.screenshotlayer.com/api/capture
 
 You can easily force the API to capture a fresh screenshot of the requested target URL by appending the `force` parameter to the request URL and setting it to `1`.
 
-### Example Query:
+**Example Query:**
 
 ```url
 http://api.screenshotlayer.com/api/capture
@@ -185,17 +185,17 @@ http://api.screenshotlayer.com/api/capture
 
 For the very few seconds a freshly captured screenshot loads, there are two options for requesting a placeholder image:
 
-### Option 1: Using the default placeholder
+**Option 1: Using the default placeholder**
 
 By appending the API's `placeholder` parameter and setting it to `1`, you can request the default screenshotlayer placeholder image.
 
-### Option 2: Setting a custom placeholder image URL
+**Option 2: Setting a custom placeholder image URL**
 
 f you prefer setting your own custom placeholder image, simply append it to the API's `placeholder` parameter as an image URL.
 
 Supported file formats: PNG, JPEG, GIF
 
-### Example query: (using option 1)
+**Example query: (using option 1)**
 
 ```url
 http://api.screenshotlayer.com/api/capture
@@ -210,7 +210,7 @@ http://api.screenshotlayer.com/api/capture
 
 By default, the screenshotlayer API does not send any HTTP User-Agent headers with your request. You can specify a custom user-agent string by appending it to the API's `user_agent` parameter.
 
-### Example Query
+**Example Query**
 
 The following query requests a screenshot of http://facebook.com on mobile Safari (iOS 8.0.2, iPhone):
 
@@ -228,7 +228,7 @@ You can find a comprehensive [list of user-agent strings here](http://www.userag
 
 The default HTTP Accept-Language header is `en-US`, en (US English, or English in general). You can specify a custom Accept-Language header by appending it to the API's `accept_lang` parameter.
 
-### Example Query
+**Example Query**
 
 The following query requests a screenshot of http://facebook.com in Spanish:
 
@@ -253,7 +253,7 @@ You can find a comprehensive [list of Accept-language strings here](http://www.m
 
 If you are subscribed to the Professional or Enterprise Plan, you may request the API to directly export your snapshot to your **AWS S3 Bucket**. This can be done simply by appending your S3 Bucket path (format: `s3://API_KEY:API_SECRET@bucket`) to the API's export parameter.
 
-### Example Query
+**Example Query**
 
 Find below an example query requesting the API to export a screenshot of http://tumblr.com directly to a specified AWS S3 Bucket.
 
@@ -270,7 +270,7 @@ http://api.screenshotlayer.com/api/capture
 
 Professional and Enterprise Customers may also specify a custom `ftp` path to directly export captured snapshots to. This can be achieved simply by appending your desired FTP path (format: `ftp://user:password@server`) to the API's `export` parameter.
 
-### Example Query
+**Example Query**
 
 Find below an example query requesting the API to export a screenshot of http://tumblr.com directly to a specified FTP path.
 
