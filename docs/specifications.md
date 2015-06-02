@@ -28,7 +28,7 @@ In order to make any API request, two required parameters - your personal access
 ### Step 3: Optional parameters
 Based on how you you wish to configure your screenshot, you can choose from a number of optional parameters:
 
-| Parameter | Description |
+| Parameter | Description | Default |
 |--------------|-------------- |-----------|
 | `fullpage` | set to "1" if you want to capture the full height of the target website ||
 | `width` | specify your preferred thumbnail width in pixels | 1:1 |
@@ -97,7 +97,7 @@ Find below an example error - triggered when the user did not provide a valid AP
 ### Common API errors:
 
 | Type | Message  | Description |
-| :------------ |:---------------:| -----:|
+|------------ |---------------| -----|
 | 404 | "404_not_found" | User requested a resource which does not exist. |
 | 101 | "missing_access_key" | User did not supply an Access Key. |
 | 101 | "invalid_access_key" | User entered an invalid Access Key. |
