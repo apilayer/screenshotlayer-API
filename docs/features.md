@@ -30,7 +30,7 @@ http://api.screenshotlayer.com/api/capture
 
 The screenshotlayer API's default viewport setting is `1440x900`. You can specify a custom viewport by setting the `viewport` parameter to your desired dimensions. (format: `width x height`, in pixels)
 
-### Example Query:
+#### Example Query:
 
 ```url
 http://api.screenshotlayer.com/api/capture
