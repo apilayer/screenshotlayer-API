@@ -4,7 +4,7 @@
 
 Find below a Ruby function that lets you capture a screenshot and define all required and optional parameters:
 
-```php
+```ruby
 require 'cgi' unless defined?(CGI)
 require 'digest' unless defined?(Digest)
  
