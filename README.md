@@ -57,7 +57,7 @@ Find a shortened version of the API's Documentation in this Repository's [docs f
 Interactive example queries, a variety of code examples (including PHP, Python and Ruby), integration guides and much more is available at [screenshotlayer.com/documentation](https://screenshotlayer.com/documentation).
 
 ## Customer Support
-Need any assistance? [Get in touch with Customer Support](mailto:support@apilayer.net?subject=[screenshotlayer]).
+Need any assistance? [Get in touch with Customer Support](mailto:support@apilayer.com?subject=[screenshotlayer]).
 
 ## Legal
 
